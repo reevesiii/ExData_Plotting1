@@ -16,7 +16,7 @@ loadData <- function() {
     ## create the filter for dates
     filterDates <- as.Date(c("2007-02-01", "2007-02-02"), "%Y-%m-%d")
     
-    
+    ## subset the data
     internalData <- subset(internalData, Date %in% filterDates)
     
     return(internalData)
